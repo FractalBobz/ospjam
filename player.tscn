@@ -10,10 +10,10 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[node name="player" type="AnimatedSprite"]
-frames = SubResource( 1 )
+[node name="KinematicBody2D" type="RigidBody2D"]
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="KinematicBody2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PoolVector2Array( -8, 32, -32, 8, -32, -8, -8, -32, 8, -32, 32, -8, 32, 8, 8, 32 )
+
+[node name="player" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
