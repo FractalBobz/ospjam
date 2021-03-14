@@ -1,8 +1,13 @@
 extends RigidBody2D
 
+var touched=false;
+
 func _ready():
 	pass
 
+func _process(_delta):
+	if touched and linear_velocity==Vector2(0,0):
+		linear_velocity=Vector2(-400,0)
 
 func _on_VisibilityNotifier2D_screen_exited():
 	queue_free()
@@ -11,6 +16,7 @@ func _on_VisibilityNotifier2D_screen_exited():
 func _on_hit_ground():
 	linear_velocity=Vector2(-400,0)
 	angular_velocity=0
+	touched=true
 	pass
 
 
