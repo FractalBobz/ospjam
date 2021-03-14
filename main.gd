@@ -28,3 +28,7 @@ func _on_Timer_timeout():
 	spike.linear_velocity=Vector2(rand_range(min_spike_velo,max_spike_velo),0)
 	spike.linear_velocity=spike.linear_velocity.rotated(direction)
 	pass # Replace with function body.
+
+
+func _on_player_game_over():
+	pass # Replace with function body.
