@@ -5,5 +5,5 @@ func _ready():
 
 func _process(_delta):
 	if Input.is_action_just_pressed("ui_up"):
-		linear_velocity.y=-100
+		linear_velocity.y=-300
 	pass

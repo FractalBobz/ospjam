@@ -20,3 +20,5 @@ polygon = PoolVector2Array( -8, 32, -32, 8, -32, -8, -8, -32, 8, -32, 32, -8, 32
 
 [node name="player" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
