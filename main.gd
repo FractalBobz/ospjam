@@ -11,6 +11,7 @@ export (int) var max_spike_velo;
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$Label.hide()
 	pass # Replace with function body.
 
 
@@ -31,4 +32,6 @@ func _on_Timer_timeout():
 
 
 func _on_player_game_over():
+	$Label.show()
+	$Timer.stop()
 	pass # Replace with function body.
